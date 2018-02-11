@@ -1,0 +1,36 @@
+group = 'it.learnandcode'
+version = '0.0.1-SNAPSHOT'
+
+buildscript {
+    ext {
+        kotlinVersion = "1.2.21"
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+
+    repositories {
+        jcenter()
+    }
+}
+
+subprojects {
+    apply plugin: "java"
+    apply plugin: "kotlin"
+    sourceCompatibility = 1.8
+
+    dependencies {
+        compile "org.jetbrains.kotlin:kotlin-stdlib"
+        compile "org.jetbrains.kotlin:kotlin-reflect"
+
+        compile "net.dv8tion:JDA:3.5.0_327"
+        compile "com.google.guava:guava:23.6-jre"
+
+        testCompile 'junit:junit:4.12'
+    }
+
+    repositories {
+        jcenter()
+    }
+}

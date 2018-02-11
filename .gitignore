@@ -1,5 +1,8 @@
-.gradle
 /build/
+/bot/build/
+/plugins/build/
+
+.gradle
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -17,6 +20,10 @@ gradle-app.setting
 
 # Log file
 *.log
+
+# IntelliJ files
+.idea/
+*.iml
 
 # BlueJ files
 *.ctxt
